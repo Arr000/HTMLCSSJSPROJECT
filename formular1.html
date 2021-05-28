@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+      
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0 "/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <title>Kontakt</title>
+       
+    </head>
+    <body class="formular" >
+
+        <nav class="rubrik" id="formularrubrik">
+            <div class="logo" >
+                <h4>Formular</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="links">Startsida</a></li>
+                <li><a href="gruppsida1.html" class="links">Gruppen</a></li>
+                <li><a href="omArash1.html" class="links">Arash</a></li>
+                <li><a href="omDavid1.html" class="links">David</a></li>
+                <li><a href="omMohamed1.html" class="links">Mohamed</a></li>
+                <li><a href="omReber1.html" class="links">Reber</a></li>
+                <li><a href="portfolio.html" class="links">Portfolio</a></li>
+              
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <div class="form">
+            <h1 class="kontakt">Kontakt</h1>
+            <form id="formular" action="register.html" method="post">
+                <table>
+                    <tr><td><label for="form_namn">* Namn:</label></td><td><input type="text" class="formular_text" id="form_namn" ></td><td><span class="fel_form" id="felmeddelandenamn"></span></td></tr>
+                    <tr><td><label for="form_email">* E-post:</label> </td><td><input type="text" class="formular_text" id="form_email" ></td><td><span class="fel_form" id="felmeddelandeepost"></span></td></tr>
+                    <tr><td><label for="form_telefonnr">* Telefon:</label></td><td><input type="text" class="formular_text" id="form_telefonnr" ></td><td><span class="fel_form" id="felmeddelandetelefon"></span></td></tr>
+                    <tr><td><label for="form_meddelande">* Meddelande:</label></td><td><textarea class="formular_text" cols="40" rows="5"  id="form_meddelande" ></textarea></td><td><span class="fel_form" id="felmeddelandemeddelande"></span></td></tr>
+    
+                    
+                </table>
+                <input type="submit" class="sbmt_btn" id="submitBtn" value="Skicka">
+    
+            </form>
+        </div>
+            <h3 class="hittaoss">Hitta oss</h3>
+
+            <div id="map"></div>
+
+
+      
+
+  <script src="app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK6G6Z6R1yH9U57ihR0GT6p0kW-i4LKpU&callback=initMap"
+  ></script>
+ 
+</body>
+</html>
